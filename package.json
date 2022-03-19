@@ -6,6 +6,10 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "eb:init": "eb init -r eu-west-1 nikg77-cart-api",
+    "eb:create": "eb create develop -s -c nikg77-cart-api-dev",
+    "eb:create:verbose": "eb create develop -s -c nikg77-cart-api-dev -v",
+    "eb:deploy": "eb deploy",
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
